@@ -1,13 +1,21 @@
-export const fetchCategories = () => {
-    return (dispatch) => {
-        dispatch({type: "LOADING_CATEGORIES"});
-        fetch("http://localhost:3000/api/v2/categories")
-        .then(resp => resp.json())
-        .then(response => {
-            dispatch({type: "FETCH_CATEGORIES", payload: response.data})
-        })
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { fetchCategories } from "../actions/fetchCategories";
+
+class CategoriesContainer extends Component {
+
+    componentDidMount(){
+        this.props.fetchCategories()
     }
-
- 
-
+    render() {
+        return (
+            <div>
+                Hi!
+            </div>
+        )
+    }
 }
+
+
+
+export default connect(null, {fetchCategories})(CategoriesContainer)

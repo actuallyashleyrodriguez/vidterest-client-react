@@ -1,22 +1,18 @@
 
 import React, {Component} from 'react';
 import './App.css';
-import { connect } from 'react-redux';
-import { fetchCategories } from './actions/fetchCategories';
+import CategoriesContainer from './containers/categoriesContainer';
 
 class App extends Component {
 
-  componentDidMount() {
-    this.props.fetchCategories()
-  }
 
   render() {
   return (
     <div className="App">
-     App
+     <CategoriesContainer/>
     </div>
   );
   }
 }
 
-export default connect(null, {fetchCategories})(App);
+export default App;
