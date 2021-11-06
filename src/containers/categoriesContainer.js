@@ -11,12 +11,18 @@ class CategoriesContainer extends Component {
     render() {
         return (
             <div>
-                <Categories/>
+                <Categories categories={this.props.categories}/>
             </div>
         )
     }
 }
 
+const mapStateToProps = state => {
+    return {
+        categories: state.categories
+    }
+}
 
 
-export default connect(null, {fetchCategories})(CategoriesContainer)
+
+export default connect(mapStateToProps, {fetchCategories})(CategoriesContainer)

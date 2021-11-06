@@ -1,4 +1,5 @@
 export const fetchCategories = () => {
+   
     return (dispatch) => {
         dispatch({type: "LOADING_CATEGORIES"});
         fetch("http://localhost:3000/api/v2/categories")
