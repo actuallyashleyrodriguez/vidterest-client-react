@@ -17,6 +17,9 @@ class CategoryInput extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addCategory(this.state)
+        this.setState({
+            name: ''
+        })
     }
 
     render() {
