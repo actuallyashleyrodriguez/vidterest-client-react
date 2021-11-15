@@ -4,13 +4,13 @@ import './index.css';
 import {createStore, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import categoryReducer from './reducers/categoryReducer';
+import rootReducers from './reducers/rootReducers';
 
 import App from './App';
 
 const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
-let store = createStore(categoryReducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(rootReducers, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <Provider store={store}>

@@ -22,7 +22,8 @@ class CategoriesContainer extends Component {
 
 const mapStateToProps = state => {
     return {
-        categories: state.categories
+        categories: state.categoryReducer.categories,
+        videos: state.videoReducer.videos
     }
 }
 
