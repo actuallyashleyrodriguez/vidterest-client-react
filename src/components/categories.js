@@ -1,4 +1,5 @@
 import React from "react";
+import VideosContainer from "../containers/VideosContainer"
 
 const Categories = (props) => {
     //console.log(props)
@@ -8,7 +9,9 @@ const Categories = (props) => {
                 <ul>
                 {category.attributes.videos.map(video => <li key={video.id}>{video.title}</li>)}
                 </ul>
-                </li> </div>)}
+                
+                </li> 
+                <VideosContainer/></div>)}
             </div>
     )
     
