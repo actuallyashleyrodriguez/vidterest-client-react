@@ -1,7 +1,7 @@
 import React from "react";
 
 const Categories = (props) => {
-    console.log(props)
+    //console.log(props)
     return(
             <div>
                 {props.categories.map(category => <div id={category.id}><li key={category.id}>{category.attributes.name}
