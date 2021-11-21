@@ -1,5 +1,5 @@
 import React from "react";
-import VideosContainer from "../containers/VideosContainer"
+import VideosContainer from "../containers/videosContainer.js";
 
 const Categories = (props) => {
     //console.log(props)
@@ -11,7 +11,8 @@ const Categories = (props) => {
                 </ul>
                 
                 </li> 
-                <VideosContainer/></div>)}
+                <VideosContainer/>
+                </div>)}
             </div>
     )
     
