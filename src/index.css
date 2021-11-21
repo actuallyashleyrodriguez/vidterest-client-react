@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1 {
+  margin-left: 200px; 
+  padding-bottom: -10px;
+  margin-bottom: -10px;
+  /*font-family: 'Amatic SC', cursive;*/
+  font-family: 'Poiret One', cursive;
+  
+}
+h2 {
+   margin-left: 250px;
+   padding-top: -10px;
+   margin-top: -5px;
+   /*font-family: 'Amatic SC', cursive;*/
+  
+}
+.header {
+  background: linear-gradient(90deg, #14A76c, #1496a7, #925de7) center;
+  border-radius: 20px 0px 0px 20px;
+}
